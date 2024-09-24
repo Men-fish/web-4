@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8c7b75;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #5e524f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.order-form, .products, .summary {
+    margin-bottom: 20px;
+}
+
+.input-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 40px;
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
