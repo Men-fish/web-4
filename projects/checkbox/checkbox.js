@@ -1,5 +1,4 @@
-let radioButtons = document.querySelectorAll('[name="food"]'); //получаем список всех checkbox элементов
-
+let radioButtons = document.querySelectorAll('[name="food"]'); 
 let btnElement = document.querySelector('.btn');
 let result = document.querySelector('.result');
 

@@ -1,9 +1,8 @@
-// Elements
+
 const totalElement = document.getElementById('total');
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const orderButton = document.getElementById('submitOrder');
 
-// Update total price
 function updateTotal() {
     let total = 0;
 
@@ -20,7 +19,6 @@ function updateTotal() {
     totalElement.textContent = total;
 }
 
-// Validate quantity input
 function validateQuantity(input) {
     let value = parseInt(input.value);
     if (isNaN(value) || value < 0 || /^0\d+$/.test(input.value)) {
@@ -31,7 +29,6 @@ function validateQuantity(input) {
     updateTotal();
 }
 
-// Event listeners for checkboxes and quantity inputs
 checkboxes.forEach(checkbox => {
     const qtyInput = document.getElementById(`${checkbox.id}-qty`);
     
@@ -44,7 +41,6 @@ checkboxes.forEach(checkbox => {
     });
 });
 
-// Event listener for "Оформить заказ" button
 orderButton.addEventListener('click', () => {
     const lastname = document.getElementById('lastname').value;
     const firstname = document.getElementById('firstname').value;
